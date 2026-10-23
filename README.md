@@ -70,6 +70,8 @@ It lives in a file called OEE.hpp (for open-ended evolution) in the `Evolve` dir
 #include Evolve/OEE.hpp  // make sure to tell your compiler how to find this file by compiling with -Ipath/to/Empirical/source
 ```
 
+**QUESTION: Which file to include in? Native? World?**
+
 #### 2. Setup your system
 
 To set-up an artificial life system with Empirical, the first thing we need to do is create a `World` object. This object keeps track of most aspects of an evolving population. It is templated off of the type of organism that lives in the world. For the rest of this example, let's pretend we're trying to evolve higher numbers in a population of integers.
