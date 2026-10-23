@@ -64,10 +64,10 @@ TODO
 
 #### 1. Include the MODES code
 
-It lives in a file called OEE.h (for open-ended evolution) in the `Evolve` directory in `source`. Empirical is header-only, so all you need to do to get started using it is include the relevant file:
+It lives in a file called OEE.hpp (for open-ended evolution) in the `Evolve` directory in `source`. Empirical is header-only, so all you need to do to get started using it is include the relevant file:
 
 ```
-#include Evolve/OEE.h  // make sure to tell your compiler how to find this file by compiling with -Ipath/to/Empirical/source
+#include Evolve/OEE.hpp  // make sure to tell your compiler how to find this file by compiling with -Ipath/to/Empirical/source
 ```
 
 #### 2. Setup your system
@@ -75,7 +75,7 @@ It lives in a file called OEE.h (for open-ended evolution) in the `Evolve` direc
 To set-up an artificial life system with Empirical, the first thing we need to do is create a `World` object. This object keeps track of most aspects of an evolving population. It is templated off of the type of organism that lives in the world. For the rest of this example, let's pretend we're trying to evolve higher numbers in a population of integers.
 
 ```
-#include "Evolve/World.h"
+#include "Evolve/World.hpp"
 
 int main() {
   emp::World<int> my_int_world;
