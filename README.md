@@ -73,7 +73,7 @@ It lives in a file called OEE.hpp (for open-ended evolution) in the `Evolve` dir
 **QUESTION: Which file to include in? Native? World?**
 
 #### 2. Setup your system
-
+**EDIT:** This section seems more about making a system in the first place, which seems like a separate guide and makes it unclear if any of this needs to be just this way for MODES
 To set-up an artificial life system with Empirical, the first thing we need to do is create a `World` object. This object keeps track of most aspects of an evolving population. It is templated off of the type of organism that lives in the world. For the rest of this example, let's pretend we're trying to evolve higher numbers in a population of integers.
 
 ```
@@ -129,7 +129,7 @@ for (int gen = 0; gen < 1000; gen++) { // Run 1000 generations
 #### 3: Add a systematics manager
 
 Because phylogeny is critical to the persistent lineage filter calculations, the MODES tracker relies heavily on the systematics manager.Thus, we need to add one to the world:
-
+**QUESTION:** Where is calc_taxon coming from?
 ```
   auto sys_ptr = pop.AddSystematics(calc_taxon);
 
